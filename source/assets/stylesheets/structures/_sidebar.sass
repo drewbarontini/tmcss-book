@@ -1,0 +1,47 @@
+// *************************************
+//
+//   Sidebar
+//   -> Page listing
+//
+// *************************************
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .structure[.structure--modifier](.is-state)(.has-context)
+//   .structure-scaffolding
+//
+// *************************************
+
+.sidebar
+  @extend .boxSizing
+  background: darken($c-background, 5%)
+  bottom: 0
+  left: 0
+  position: fixed
+  top: $header-height
+  width: $sidebar-width
+  z-index: 10
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Link ----- //
+
+.sidebar-link
+  border: 0
+  color: $c-secondary
+  display: block
+  font-family: $f-header
+  font-size: 80%
+  padding: $b-whitespace-s $b-whitespace
+  &:hover,
+  &:focus
+    background: darken($c-background, 12%)
+    color: $c-base
+
+// Active
+
+.sidebar-link.is-active
+  background: $c-background
