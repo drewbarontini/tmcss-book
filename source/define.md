@@ -9,7 +9,19 @@ Define
 
 Before we dig into the thinking behind modular CSS, it's important to define it, and talk about the tenets of modular CSS.
 
-First off, let's talk about the definition of it:
+From Pages to Components
+------------------------
+
+We've made a shift from thinking of our styling in terms of pages to styling in terms of components (patterns, modules). Instead of looking at a page and defining it as its whole, we now need to look at all the various modules that make up the page.
+
+**Example**
+
+This isn't the Home page, but rather a collection of various style patterns and modules that we use all over the site. We'll look at how we can do in a bit.
+
+"Modular CSS" Definition
+------------------------
+
+So what exactly do we mean by "Modular CSS"? Let's look at the definition:
 
 >  Modular design is an approach that subdivides a system into smaller parts
     that can be independently created and then used in different systems to
@@ -48,35 +60,28 @@ Firstly, our CSS modules should only have one responsibility. It's helpful, when
 ```sass
 // *************************************
 //
-//   List
-//   -> Text lists
+//   Cell
+//   -> Width-limiting blocks
 //
 // *************************************
 ```
 
-This comment block is using Sass, but the same idea applies to vanilla CSS. Now, we know what our module is responsible for, so we can go ahead and build it.
+*This comment block is using Sass, but the same idea applies to vanilla CSS.* 
+
+Now we know what our module is responsible for, so we can build it.
 
 ```css
-.list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.list-item {
-  display: block;
-  margin-bottom: 1em;
-}
-.list-item:last-child {
-  margin-bottom: 0;
+.cell {
+  margin: 0 auto;
+  max-width: 900px;
 }
 ```
 
-Here we have the list module that handles text lists. Its only responsibility is to take arrange text items horizontally and vertically.
+Here we have the `cell` module that handles the container for content. It makes sure that a section is centered and has its `max-width` set appropriately.
 
 ### Encapsulation
 
-Secondly, our CSS modules should be encapsulated; meaning, they shouldn't directly affect one another.
+Secondly, our CSS modules should be encapsulated; meaning, they shouldn't directly affect one another, or, they don't need to know about one another.
 
 ```html
 <header class="header">
@@ -153,6 +158,12 @@ Now let's look at some more practical applications of "Modular CSS."
 
 This one seems to be more commonplace these days, but it's still worth
 mentioning: **It's best to stick with only using classes, avoiding IDs altogether**. IDs are too specific, and they'll cause you unnecessary headaches. Classes, on the other hand, flatten the specificity of your elements to make sure your styles are applied properly without having to fuss with specificity issues.
+
+```html
+<header class="header">
+  <!--- ... --->
+</header>
+```
 
 Establish naming conventions
 ----------------------------
