@@ -7,6 +7,8 @@ priority: 5
 Examples
 ========
 
+Now that we've defined "Modular CSS" and talked about the process of discovering and writing patterns, let's take that knowledge and walk through some real sites and determine how we'd structure our CSS.
+
 Dribbble
 --------
 [http://dribbble.com/](http://dribbble.com/)
