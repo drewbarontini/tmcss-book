@@ -89,7 +89,7 @@ Cards are stylistic containers for content, that general have some `background-c
 
 #### List
 
-Lists are *everywhere* on the web, and it's a very common pattern that you'll have to write on each site. I try and break doing `list` pattern into simple text lists, and simple objects lists. Beyond that, you might have more complex and unique lists, but we're trying to write a modular list that applies to various patterns.
+Lists are *everywhere* on the web, and it's a very common pattern that you'll have to write on each site. I try to break down a `list` module into simple text lists, and simple objects lists. Beyond that, you might have more complex and unique lists, but we're trying to write a modular list that applies to various patterns without breaking the Single Responsibility Principle.
 
 ![Designer News](process-dn-01.png)
 ![Designer News](process-dn-02.png)
