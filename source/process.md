@@ -43,7 +43,9 @@ A `row` generally includes some horizontal `padding` and a `background-color`. T
 Virtually all sites have some container or wrapper that keeps the content contained. We used to do something like this:
 
 ```html
-<div id="wrapper"></div>
+<div id="wrapper">
+  <!-- ... -->
+</div>
 ```
 
 We call them `cell`s, and they handle the `max-width` on a container, and *generally* the horizontal centering via `margin: 0 auto`.
