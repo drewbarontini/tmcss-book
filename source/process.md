@@ -55,6 +55,30 @@ On [Meagan Fisher's site](http://owltastic.com/), she has her content contained 
 ![Owltastic](process-owltastic-01.png)
 ![Owltastic](process-owltastic-02.png)
 
+#### Well
+
+The `well` handles the vertical spacing on the top and bottom, and it generally resides within a `cell`.  
+
+![Owltastic](process-owltastic-03.png)
+
+Again, on **Meagan Fisher's** site, you can see that there is some set spacing at the top and bottom of each `row`, and within each `cell` that is handling the width limiting.
+
+We used to build this into the `cell`, but we realized that it isn't properly adhering to the **Single Responsibility Principle**, so we made the new `well` module to handle *only* vertical spacing.
+
+```html
+<div class="cell well">
+  <!-- ... -->
+</div>
+```
+
+The `cell` and `well` are used in conjunction with one another, and you can specify modifiers to your `well` that will handle various vertical margins.
+
+```html
+<div class="cell well--l">
+  <!-- ... -->
+</div>
+```
+
 #### Grids
 
 We're all familiar with grids. They've existed for a long time on the web, and they are a very common and clear pattern to identify.
