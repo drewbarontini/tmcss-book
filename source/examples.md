@@ -13,6 +13,8 @@ Dribbble
 --------
 [http://dribbble.com/](http://dribbble.com/)
 
+![Dribbble](examples-dribbble.png)
+
 Example of:
 
 - How we originally wrote "Modular CSS"
@@ -23,6 +25,38 @@ Example of:
 3. Build
 4. Combine
 5. Refine
+
+### Header
+
+![Dribbble](examples-dribbble-header.png)
+
+### Main
+
+![Dribbble](examples-dribbble-main.png)
+
+#### Main Navigation
+
+![Dribbble](examples-dribbble-main-nav.png)
+
+#### Shots
+
+![Dribbble](examples-dribbble-main-shot.png)
+
+#### Pager
+
+![Dribbble](examples-dribbble-main-pager.png)
+
+### Footer
+
+![Dribbble](examples-dribbble-footer.png)
+
+#### Top
+
+![Dribbble](examples-dribbble-footer-top.png)
+
+#### Bottom
+
+![Dribbble](examples-dribbble-footer-bottom.png)
 
 Instagram
 ---------
