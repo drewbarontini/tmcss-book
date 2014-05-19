@@ -125,36 +125,106 @@ After you've identified the pattern(s), you need to define them. This is always 
 
 ### Responsibility
 
-First, though, determine what the responsibility of the pattern is. That will help dictate the name of the pattern.
+First, though, determine what the responsibility of the module is. That will help dictate the name of the module.
 
-**Example**
+*This module handles the video player*.
 
 ### Name
 
 With the responsibility defined, you can then name the element.
 
-**Example**
+```css
+.video { }
+```
+
+And any modifiers:
+
+```css
+.video--center { }
+```
+
+Or submodules:
+
+```css
+.video-play     { }
+.video-progress { }
+```
 
 3. Build
 --------
 
 Now that the pattern is identified and defined, you can build the module.
 
-**Example**
+```css
+.video {
+  max-width: 960px;
+}
+
+.video--center {
+  margin: 0 auto;
+}
+
+.video-play {
+  /* Styles! */
+}
+
+.video-progress {
+  /* Styles! */
+}
+```
 
 4. Combine
 ----------
 
 With your module built, you will want to combine it with other modules that you have created. For example, your layout patterns &mdash; `row`s, `cell`s, and `grid`s, will be used in conjuntion with one another to lay out the page.
 
+```html
+<div class="row">
+  <div class="cell">
+    <div class="grid">
+      <!-- ... -->
+    </div>
+  </div>
+</div>
+```
+
 The goal of a flexible CSS architecture is to have separate, encapsulated modules that can work together and be mixed and matched to create various styles.
 
 **Example**
+
+```html
+<div class="video card">
+  <!-- .. -->
+</div>
+```
+
+```css
+.card {
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+  padding: 1.25em;
+}
+```
 
 5. Refine
 ---------
 
 With all of your modules now working together, you'll want to refine, or refactor, as necessary. You're never going to write something perfect the first time (most likely), so be sure to constantly evaluate and refactor your CSS code. Don't be afraid to write something specifically, and abstract as you build out the site. Frequently, we're building sites in an unpredictable manner, so we'll have to change the structure are we build out the system.
 
-**Example**
+```css
+.element {
+  position: relative;
+  top: -2px; /* FIXME: Magic number! */
+}
+```
 
+Look for the magic numbers! See if you can remove them and make your styles more predicatable.
+
+```css
+.element {
+  width: 50%;
+}
+```
+
+Are you setting fixed `width`s on non-layout modules? You want your modules to flex to fit any container, and this is an easy way to spot places you need to refactor.
