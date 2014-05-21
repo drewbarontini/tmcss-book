@@ -63,7 +63,7 @@ The `well` handles the vertical spacing on the top and bottom, and it generally 
 
 Again, on **Meagan Fisher's** site, you can see that there is some set spacing at the top and bottom of each `row`, and within each `cell` that is handling the width limiting.
 
-We used to build this into the `cell`, but we realized that it isn't properly adhering to the **Single Responsibility Principle**, so we made the new `well` module to handle *only* vertical spacing.
+We used to build this into the `cell`, but we realized that it wasn't properly adhering to the **Single Responsibility Principle**, so we made the new `well` module to handle *only* vertical spacing.
 
 ```html
 <div class="cell well">
@@ -236,12 +236,16 @@ The goal of a flexible CSS architecture is to have separate, encapsulated module
 
 With all of your modules now working together, you'll want to refine, or refactor, as necessary. You're never going to write something perfect the first time (most likely), so be sure to constantly evaluate and refactor your CSS code. Don't be afraid to write something specifically, and abstract as you build out the site. Frequently, we're building sites in an unpredictable manner, so we'll have to change the structure are we build out the system.
 
+### Magic Numbers
+
 ```css
 .element {
   position: relative;
   top: -2px; /* FIXME: Magic number! */
 }
 ```
+
+### Layout
 
 Look for the magic numbers! See if you can remove them and make your styles more predicatable.
 
@@ -252,3 +256,7 @@ Look for the magic numbers! See if you can remove them and make your styles more
 ```
 
 Are you setting fixed `width`s on non-layout modules? You want your modules to flex to fit any container, and this is an easy way to spot places you need to refactor.
+
+### Tools
+
+Use things like [csscss](https://github.com/zmoazeni/csscss), [csslint](https://github.com/CSSLint/csslint), and [Style Stats](https://github.com/t32k/stylestats) to help you spot repitition of your code.

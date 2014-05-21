@@ -9,25 +9,30 @@ Define
 
 Before we dig into the thinking behind modular CSS, it's important to define it, and talk about the tenets of modular CSS.
 
+**Note**: I will use the words `module`, `pattern`, and `component` interchangeably; they all refer to a set of self-contained styles.
+
 From Pages to Components
 ------------------------
 
 We've made a shift from thinking of our styling in terms of pages to styling in terms of components (patterns, modules). Instead of looking at a page and defining it as its whole, we now need to look at all the various modules that make up the page.
 
+> "Focusing on creating healthy front-end modules instead of complete pages  can help break complex page layouts into reusable solutions."
+--- Dave Rupert
+
 **Example**
 
 This isn't the Home page, but rather a collection of various style patterns and modules that we use all over the site. We'll look at how we can do in a bit.
+
+> "Tiny Bootstraps, for Every Client"
+--- Dave Rupert
 
 "Modular CSS" Definition
 ------------------------
 
 So what exactly do we mean by "Modular CSS"? Let's look at the definition:
 
->  Modular design is an approach that subdivides a system into smaller parts
-    that can be independently created and then used in different systems to
-    drive multiple functionalities.
-
-[Wikipedia](http://en.wikipedia.org/wiki/Modular_design)
+>  Modular design is an approach that subdivides a system into smaller parts that can be independently created and then used in different systems to drive multiple functionalities. 
+--- [Wikipedia](http://en.wikipedia.org/wiki/Modular_design)
 
 I heard three important pieces in that definition:
 
@@ -39,19 +44,15 @@ Your CSS should be:
 
 - Broken down into smaller parts, smaller chunks of styles
 - Independently created, so you're modules can be properly encapsulated (which we'll get more into in a bit)
-- Have the ability to be ported from system to system with minor modifications
+- Have the ability to be ported from system to system with minor modifications, whether it's another site, or simply various containers within the site.
 
 Single Responsibility Principle
 -------------------------------
 
 Those concepts are present in the "Single Responsibility Principle," which is something that I always try to adhere to.
 
-> The single responsibility principle states that every class should have a
-   single responsibility, and that responsibility should be entirely
-   encapsulated by the class. All its services should be narrowly aligned with
-   that responsibility.
-
-[Wikipedia](http://en.wikipedia.org/wiki/Single_responsibility_principle)
+> The single responsibility principle states that every class should have a single responsibility, and that responsibility should be entirely encapsulated by the class. All its services should be narrowly aligned with that responsibility.
+--- [Wikipedia](http://en.wikipedia.org/wiki/Single_responsibility_principle)
 
 ### Single Responsibility
 
@@ -174,7 +175,7 @@ them. Decide with your team (or yourself) what those should be, and make sure to
 Nick Walsh, a front-end developer at Envy Labs, had this great quote that we always reference when we talk about how we write our CSS, and how frequently we change it.
 
 > This is how it is now, until we change it.
-- Nick Walsh
+--- Nick Walsh
 
 It's very true. We constantly evaluate and evolve the system as we work on new projects, but that's what makes the system better: constant evaluation.
 
@@ -369,5 +370,5 @@ This is all well and good until we have a second `.nav` block that needs to be p
 </div>
 ```
 
-This is an example of the grid we use, but the concept of a grid handing the structure is what's important here. The individual module doesn't need to control its layout; it should flex and fit in any container.
+This is an example of the grid we use, but the concept of a grid handling the structure is what's important here. The individual module doesn't need to control its layout; it should flex and fit in any container.
 
