@@ -245,9 +245,9 @@ With all of your modules now working together, you'll want to refine, or refacto
 }
 ```
 
-### Layout & Positioning
-
 Look for the magic numbers! See if you can remove them and make your styles more predicatable.
+
+### Layout & Positioning
 
 ```css
 .element {
@@ -256,6 +256,18 @@ Look for the magic numbers! See if you can remove them and make your styles more
 ```
 
 Are you setting fixed `width`s on non-layout modules? You want your modules to flex to fit any container, and this is an easy way to spot places you need to refactor. Are you forcing `absolute` or `fixed` positioning on elements that shouldn't have it?
+
+### Unsetting Styles
+
+```css
+.element {
+  background: none;
+  border: 0;
+  box-shadow: none;
+}
+```
+
+If you find yourself unsetting a lot of styles, you might want to consider a refactor.
 
 ### Style Repetition
 
