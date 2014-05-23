@@ -12,9 +12,13 @@ The name of this talk is "Thinking Modular CSS." Before we get our hands dirty, 
 Musings about Dan Denney
 ------------------------
 
-I'm fortunate enough that I get to work with Dan Denney. He is one of my favorite people on this planet. The story I like to always tell that illustrates this is his encounter with HTML emails. I'm sure all of us here know how painful they are. You have to code in `table`s like the late 90s, use inline styles, `spacer.gif`s, and it's just very archaic. However, not for Dan Denney. Instead of pushing through and moving on, what did he do? He made our HTML emails awesome, pushed the technology, and now wears the crown of "HTML Email King."
+I'm fortunate enough that I get to work with Dan Denney. He is one of my favorite people on this planet.
+
+The story I like to always tell that illustrates this is his encounter with HTML emails. I'm sure all of us here know how painful they are. You have to code in `table`s like the late 90s, use inline styles, and it's just generally not fun. All of our front-end developers just get in, do them, and get out. However, not for Dan Denney. Instead of pushing through and moving on, what did he do? He made our HTML emails awesome, pushed the technology, and now wears the crown of "HTML Email King."
 
 He's a saint, and everyone needs to know that.
+
+`#saintdenney`
 
 I love this conference
 ----------------------
@@ -43,7 +47,11 @@ Before we get into that, I want to give you some information about me. As Dan sa
 What do I do?
 -------------
 
-I'm a front-end developer at Code School. We have our offices right over in Orlando.
+I'm a front-end developer at Code School. We have our offices right over in Orlando. Being in Orlando, we get to have fun company events, like:
+
+- Trips to the Epcot Food & Wine Festival each year, where we get to eat and drink the day away
+- Playing WhirlyBall
+- And occasionally attending Orlando Magic basketball games
 
 What is Code School?
 --------------------
