@@ -245,7 +245,7 @@ With all of your modules now working together, you'll want to refine, or refacto
 }
 ```
 
-### Layout
+### Layout & Positioning
 
 Look for the magic numbers! See if you can remove them and make your styles more predicatable.
 
@@ -255,8 +255,8 @@ Look for the magic numbers! See if you can remove them and make your styles more
 }
 ```
 
-Are you setting fixed `width`s on non-layout modules? You want your modules to flex to fit any container, and this is an easy way to spot places you need to refactor.
+Are you setting fixed `width`s on non-layout modules? You want your modules to flex to fit any container, and this is an easy way to spot places you need to refactor. Are you forcing `absolute` or `fixed` positioning on elements that shouldn't have it?
 
-### Tools
+### Style Repetition
 
-Use things like [csscss](https://github.com/zmoazeni/csscss), [csslint](https://github.com/CSSLint/csslint), and [Style Stats](https://github.com/t32k/stylestats) to help you spot repitition of your code.
+Use tools like [csscss](https://github.com/zmoazeni/csscss), [csslint](https://github.com/CSSLint/csslint), and [Style Stats](https://github.com/t32k/stylestats) to help you spot repetition of your code.
