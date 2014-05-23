@@ -6,12 +6,17 @@ activate :syntax
 
 set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true, :smartypants => true
+set :relative_links, true
 
 # Methods defined in the helpers block are available in templates
 helpers do
   def get_pages
     sitemap.resources.select { |resource| resource.data.type == 'page' }
       .sort_by { |r| r.data.priority.to_i }
+  end
+
+  def get_page(priority)
+    sitemap.resources.select { |resource| resource.data.type == 'page' and resource.data.priority == priority }
   end
 
   def is_page_active(page)
