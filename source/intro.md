@@ -25,10 +25,14 @@ I love this conference
 
 In all seriousness, I love this conference. I've only missed it once, and I look forward to it every year. The Denney family does a tremendous job, and I'm super pumped to be here, and to be speaking to all of you.
 
+And as proof that I've been here before, here is a picture of me from last year. Funny story: in our company chatroom, if you use the word "unimpressed", this picture shows up because, apparently, I look unimpressed. However, I think I was more just in awe while looking at all the bacon.
+
 What is this talk about?
 ------------------------
 
 So what am I hear to talk about? This talk is called, "Thinking Modular CSS". What does that mean?
+
+> Learn the "why" of modular CSS by analyzing the decisions that craft a flexible architecture.
 
 I *really* want to explore the thought process behind building modular CSS systems. We've talked a lot about the "how" of things like object-oriented CSS (and other CSS methodologies), but we haven't really talked about the process that we take to get there.
 
@@ -42,7 +46,7 @@ So how are we going to go about this? First, we'll define "modular CSS." Next, w
 Who am I?
 ---------
 
-Before we get into that, I want to give you some information about me. As Dan said, I'm Drew Barontini.
+Before we get into that, I want to give you some information about me. As Dan said, I'm Drew Barontini. You can find me on Twitter, or most places on the Internet, **@drewbarontini**.
 
 What do I do?
 -------------
@@ -102,8 +106,8 @@ I took some computer science classes in college, and I became fascinated with pr
 
 Ultimately, the balance and blend of design and programming landed me right where I'm happy to be now, front-end development.
 
-Front-end is now a specialization
----------------------------------
+Front-end is a specialization
+-----------------------------
 
 "Front-end Development" truly is a specialization; it's a craft, and it's not easy to do. It's not just for designers who code or developers who write HTML & CSS. It's an area of focus for unique individuals with particular skill sets. I'm proud to call myself a "front-end developer."
 
@@ -128,4 +132,6 @@ Our styles are built out on large-scale applications that need to be performant 
 #### Ability for styles to flex and work in different situations, environments
 
 Our styles need to be flexible so that we can add new features and pages, as well as have a solid foundation for each new site or application that we build.
+
+In order to create flexible and modular systems, we have to adhere to the ideas of "Modular CSS," so let's talk about those ideas.
 
