@@ -384,7 +384,9 @@ Ah, the Dribbble shot. We're all (most likely) very familiar with it. How would 
 ```html
 <div class="shot">
   <div>
-    <img src="image.jpg" alt="" />
+    <a href="#">
+      <img src="image.jpg" alt="" />
+    </a>
     <ul>
       <li>3</li>
       <li><a href="#">1</a></li>
@@ -417,7 +419,9 @@ Ok ok, we'll scope everything to the `.shot`!
 ```html
 <div class="shot">
   <div class="shot-preview">
-    <img class="shot-img" src="image.jpg" alt="" />
+    <a href="#">
+      <img class="shot-img" src="image.jpg" alt="" />
+    </a>
     <ul class="shot-list">
       <li>3</li>
       <li><a href="#">1</a></li>
@@ -447,7 +451,9 @@ Alright. We've fixed the problem with that `h2` changing to an `h3`. Now we just
 ```html
 <div class="card">
   <div class="card-preview">
-    <img class="card-img" src="image.jpg" alt="" />
+    <a href="#">
+      <img class="card-img" src="image.jpg" alt="" />
+    </a>
     <ul class="card-list">
       <li>3</li>
       <li><a href="#">1</a></li>
@@ -477,7 +483,9 @@ Okay, we call it a `card`; that's *way* more abstract, so we're good, right? Wel
 ```html
 <div class="card">
   <div class="card-preview">
-    <img class="card-img" src="image.jpg" alt="" />
+    <a href="#">
+      <img class="card-img" src="image.jpg" alt="" />
+    </a>
     <ul class="list">
       <li>3</li>
       <li><a href="#">1</a></li>
@@ -504,7 +512,9 @@ The same thing starts happening for the various `shot` submodules, and now we se
 
 ```html
 <div class="card">
-  <img class="thumb thumb--m" src="image.jpg" alt="" />
+  <a href="#">
+    <img class="thumb thumb--m" src="image.jpg" alt="" />
+  </a>
   <ul class="list">
     <li class="list-item">3</li>
     <li class="list-item"><a href="#">1</a></li>
