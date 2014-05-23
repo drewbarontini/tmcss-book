@@ -21,7 +21,7 @@ We've made a shift from thinking of our styling in terms of pages to styling in 
 
 **Example**
 
-This isn't the Home page, but rather a collection of various style patterns and modules that we use all over the site. We'll look at how we can do in a bit.
+This isn't the Home page, but rather a collection of various style patterns and modules that we use all over the site.
 
 > "Tiny Bootstraps, for Every Client"
 --- Dave Rupert
