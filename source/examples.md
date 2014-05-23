@@ -15,11 +15,6 @@ Dribbble
 
 ![Dribbble](examples-dribbble.png)
 
-Example of:
-
-- How we originally wrote "Modular CSS"
-- What it really means now
-
 1. Identify
 2. Define
 3. Build
