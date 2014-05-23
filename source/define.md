@@ -390,7 +390,7 @@ Evolution of Modular CSS
 
 We've seen a gradual shift in the way that we think about modular CSS, and how our styles should be written. Let's look at an example.
 
-![Screenshot](examples-dribbble-main-shot.png)
+![Screenshot](define-dribbble-shot.png)
 
 Ah, the Dribbble shot. We're all (most likely) very familiar with it. How would we have marked this up *initially* with the advent of "modular" CSS?
 
