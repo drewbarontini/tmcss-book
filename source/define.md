@@ -383,16 +383,18 @@ Ah, the Dribbble shot. We're all (most likely) very familiar with it. How would 
 
 ```html
 <div class="shot">
-  <img src="image.jpg" alt="" />
-  <ul>
-    <li>3</li>
-    <li><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-  </ul>
+  <div>
+    <img src="image.jpg" alt="" />
+    <ul>
+      <li>3</li>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+    </ul>
+  </div>
   <h2>
     <a href="#">
       <img src="user.jpg" alt="User Name" />
-      Jacob Cass
+      User Name
     </a>
   </h2>
 </div>
@@ -400,12 +402,12 @@ Ah, the Dribbble shot. We're all (most likely) very familiar with it. How would 
 
 ```css
 .shot          { }
+.shot div      { }
 .shot img      { }
 .shot ul       { }
 .shot ul li    { }
 .shot h2       { }
-.shot h2 a     { }
-.shot h2 a img { }
+/* ... */
 ```
 
 This worked, but we quickly ran into issues when we changed the markup. What happens when that `h2` turns into an `h3`? Well, not only do you have to change it in the HTML, but you also have to change it in the CSS. And specificity! We're making it really difficult to overwrite down the cascade.
@@ -414,12 +416,14 @@ Ok ok, we'll scope everything to the `.shot`!
 
 ```html
 <div class="shot">
-  <img class="shot-img" src="image.jpg" alt="" />
-  <ul class="shot-list">
-    <li>3</li>
-    <li><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-  </ul>
+  <div class="shot-preview">
+    <img class="shot-img" src="image.jpg" alt="" />
+    <ul class="shot-list">
+      <li>3</li>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+    </ul>
+  </div>
   <h2 class="shot-user">
     <a href="#">
       <img src="user.jpg" alt="User Name" />
@@ -430,23 +434,26 @@ Ok ok, we'll scope everything to the `.shot`!
 ```
 
 ```css
-.shot       { }
-.shot-img   { }
-.shot-list  { }
-.shot-title { }
-.shot-user  { }
+.shot         { }
+.shot-preview { }
+.shot-img     { }
+.shot-list    { }
+.shot-title   { }
+.shot-user    { }
 ```
 
 Alright. We've fixed the problem with that `h2` changing to an `h3`. Now we just have to target the `shot-user` class, and it will apply the correct styles to any HTML element used there. Good? Not really. What if we use this same pattern for another element that *isn't* a "shot"? The name `shot` doesn't really make sense for that element, so we need to make it something more abstract. Alright, let's evolve this.
 
 ```html
 <div class="card">
-  <img class="card-img" src="image.jpg" alt="" />
-  <ul class="card-list">
-    <li>3</li>
-    <li><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-  </ul>
+  <div class="card-preview">
+    <img class="card-img" src="image.jpg" alt="" />
+    <ul class="card-list">
+      <li>3</li>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+    </ul>
+  </div>
   <h2 class="card-user">
     <a href="#">
       <img src="user.jpg" alt="User Name" />
@@ -457,23 +464,26 @@ Alright. We've fixed the problem with that `h2` changing to an `h3`. Now we just
 ```
 
 ```css
-.card       { }
-.card-img   { }
-.card-list  { }
-.card-title { }
-.card-user  { }
+.card         { }
+.card-preview { }
+.card-img     { }
+.card-list    { }
+.card-title   { }
+.card-user    { }
 ```
 
 Okay, we call it a `card`; that's *way* more abstract, so we're good, right? Well not quite. We realize now that our `card-list` styles are being duplicated on different lists throughout the site. We need to pull that out. I think you see where this is headed.
 
 ```html
 <div class="card">
-  <img class="card-img" src="image.jpg" alt="" />
-  <ul class="list">
-    <li>3</li>
-    <li><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-  </ul>
+  <div class="card-preview">
+    <img class="card-img" src="image.jpg" alt="" />
+    <ul class="list">
+      <li>3</li>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+    </ul>
+  </div>
   <h2 class="card-user">
     <a href="#">
       <img src="user.jpg" alt="User Name" />
@@ -484,12 +494,10 @@ Okay, we call it a `card`; that's *way* more abstract, so we're good, right? Wel
 ```
 
 ```css
-.card       { }
-.card-img   { }
-.card-title { }
-.card-user  { }
+.card { }
+/* ... */
 
-.list       { }
+.list { }
 ```
 
 The same thing starts happening for the various `shot` submodules, and now we see the problem. We can see that the `shot` isn't really a `shot`, it's a collection of various style patterns that **should be written as highly reusable patterns**.
@@ -502,12 +510,14 @@ The same thing starts happening for the various `shot` submodules, and now we se
     <li class="list-item"><a href="#">1</a></li>
     <li class="list-item"><a href="#">2</a></li>
   </ul>
-  <h2 class="card-title">
-    <a href="#">
-      <img class="thumb" src="user.jpg" alt="User Name" />
-      Jacob Cass
-    </a>
-  </h2>
+</div>
+<div class="bucket bucket--flag">
+  <div class="bucket-media">
+    <img class="thumb" src="user.jpg" alt="User Name" />
+  </div>
+  <div class="bucket-content">
+    <h2><a href="#">User Name</a></h2>
+  </div>
 </div>
 ```
 
