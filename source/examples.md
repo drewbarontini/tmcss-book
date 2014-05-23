@@ -13,45 +13,90 @@ Dribbble
 --------
 [http://dribbble.com/](http://dribbble.com/)
 
-![Dribbble](examples-dribbble.png)
-
 1. Identify
 2. Define
 3. Build
 4. Combine
 5. Refine
 
-### Header
+### Identify
 
-![Dribbble](examples-dribbble-header.png)
+![Dribbble](example-dribbble.png)
+![Dribbble](example-dribbble-bottom.png)
 
-### Main
+#### Structure & Layout
 
-![Dribbble](examples-dribbble-main.png)
+First, we start by identifying the most reusable modules, the ones used for structure and layout.
 
-#### Main Navigation
+- Row
+- Cell
+- Well
+- Grid
 
-![Dribbble](examples-dribbble-main-nav.png)
+##### Row
 
-#### Shots
+The `row` module handles width-spanning blocks.
 
-![Dribbble](examples-dribbble-main-shot.png)
+- Full-width background colors
+- Horizontal padding
 
-#### Pager
+![Dribbble](example-dribbble-row-01.png)
+![Dribbble](example-dribbble-row-02.png)
+![Dribbble](example-dribbble-row-03.png)
 
-![Dribbble](examples-dribbble-main-pager.png)
+##### Cell
 
-### Footer
+The `cell` module handles width-limiting.
 
-![Dribbble](examples-dribbble-footer.png)
+- Horizontal centering
+- `max-width`
 
-#### Top
+![Dribbble](example-dribbble-cell-01.png)
+![Dribbble](example-dribbble-cell-02.png)
 
-![Dribbble](examples-dribbble-footer-top.png)
+##### Well
 
-#### Bottom
+The `well` module handles vertical spacing.
 
-![Dribbble](examples-dribbble-footer-bottom.png)
+- Top/bottom margin
+
+![Dribbble](example-dribbble-well.png)
+
+##### Grid
+
+The `grid` module handles grid-based element arrangement.
+
+![Dribbble](example-dribbble-grid-01.png)
+![Dribbble](example-dribbble-grid-02.png)
+
+```html
+<div class="row">
+  <div class="cell well">
+    <div class="grid">
+      <!-- ... -->
+    </div>
+  </div>
+</div>
+```
+
+With these modules in place, we have a simple structure that we can use to set up the layout of the site.
+
+#### Common Patterns
+
+Next, we tackle the common patterns that we're used to seeing.
+
+- List
+- Thumb
+- Icon
+- Form
+- Card
+- Bucket
+
+#### Unique Patterns
+
+I'm not seeing any unique patterns, but that might change as you build out the site.
+
+**Link to code**
 
 Instagram
 ---------
