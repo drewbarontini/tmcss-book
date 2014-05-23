@@ -46,6 +46,17 @@ Your CSS should be:
 - Independently created, so you're modules can be properly encapsulated (which we'll get more into in a bit)
 - Have the ability to be ported from system to system with minor modifications, whether it's another site, or simply various containers within the site.
 
+**Breaking your CSS down into smaller chunks will ultimately result in more maintainable code.**
+
+```css
+.thumb {
+  border-radius: 50%;
+  display: block;
+}
+```
+
+We have a `thumb` module, which applies a *small set of extendable styles*.
+
 Single Responsibility Principle
 -------------------------------
 
@@ -78,11 +89,11 @@ Now we know what our module is responsible for, so we can build it.
 }
 ```
 
-Here we have the `cell` module that handles the container for content. It makes sure that a section is centered and has its `max-width` set appropriately.
+Here we have the `cell` module that handles the container for content. It makes sure that a section is centered and has its `max-width` set appropriately. This module *only* handles width limiting, and it adheres to the Single Responsibility Principle.
 
 ### Encapsulation
 
-Secondly, our CSS modules should be encapsulated; meaning, they shouldn't directly affect one another, or, they don't need to know about one another.
+Secondly, our CSS modules should be encapsulated; meaning, they shouldn't directly affect one another, or, they don't need to know about one another. Think about encapsulation as an information-hiding mechanism. Let's look at an example.
 
 ```html
 <header class="header">
@@ -136,7 +147,7 @@ We can make this better by abstracting out a `float` utility class.
 }
 ```
 
-- Note about how scary this is
+Yes, this is scary, but small, extendable utility classes like this one can save you lines and lines of CSS for all of those one-off contextual style tweaks **that always occur**.
 
 ```html
 <header class="header">
@@ -161,10 +172,12 @@ This one seems to be more commonplace these days, but it's still worth
 mentioning: **It's best to stick with only using classes, avoiding IDs altogether**. IDs are too specific, and they'll cause you unnecessary headaches. Classes, on the other hand, flatten the specificity of your elements to make sure your styles are applied properly without having to fuss with specificity issues.
 
 ```html
-<header class="header">
+<table class="table">
   <!--- ... --->
-</header>
+</table>
 ```
+
+This may seem redundant, but we want to call `.table`, not `table`.
 
 Establish naming conventions
 ----------------------------
@@ -431,7 +444,7 @@ Ok ok, we'll scope everything to the `.shot`!
   <h2 class="shot-user">
     <a href="#">
       <img src="user.jpg" alt="User Name" />
-      Jacob Cass
+      User Name
     </a>
   </h2>
 </div>
@@ -463,7 +476,7 @@ Alright. We've fixed the problem with that `h2` changing to an `h3`. Now we just
   <h2 class="card-user">
     <a href="#">
       <img src="user.jpg" alt="User Name" />
-      Jacob Cass
+      User Name
     </a>
   </h2>
 </div>
@@ -495,7 +508,7 @@ Okay, we call it a `card`; that's *way* more abstract, so we're good, right? Wel
   <h2 class="card-user">
     <a href="#">
       <img src="user.jpg" alt="User Name" />
-      Jacob Cass
+      User Name
     </a>
   </h2>
 </div>
