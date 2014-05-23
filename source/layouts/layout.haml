@@ -3,14 +3,12 @@
   %head
     %meta{ :charset => 'utf-8' }
     %meta{ :content => 'IE=edge,chrome=1', 'http-equiv' => 'X-UA-Compatible' }
-    / Use title if it's in the page YAML frontmatter
-    %title= current_page.data.title || data.book.title
+    %title= "#{current_page.data.title} - #{data.leo.title}" || data.leo.title
 
     = stylesheet_link_tag 'application'
 
   %body{ class: page_classes }
 
-    = partial 'shared/header'
     = partial 'shared/sidebar'
 
     .row
@@ -20,4 +18,5 @@
           = find_and_preserve do
             = yield
 
+    = javascript_include_tag  'http://code.jquery.com/jquery-1.11.1.min.js'
     = javascript_include_tag  'application'
