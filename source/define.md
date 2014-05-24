@@ -19,12 +19,10 @@ We've made a shift from thinking of our styling in terms of pages to styling in 
 > "Focusing on creating healthy front-end modules instead of complete pages  can help break complex page layouts into reusable solutions."
 --- Dave Rupert
 
-**Example**
+![TED](define-ted-01.png)
+![TED](define-ted-02.png)
 
-This isn't the Home page, but rather a collection of various style patterns and modules that we use all over the site.
-
-> "Tiny Bootstraps, for Every Client"
---- Dave Rupert
+This isn't the Home page, but rather a collection of various style patterns and modules that we *can* use all over the site. Modular design is the principle that we use to get there.
 
 "Modular CSS" Definition
 ------------------------
@@ -55,7 +53,7 @@ Your CSS should be:
 }
 ```
 
-We have a `thumb` module, which applies a *small set of extendable styles*.
+We have a `thumb` module, which applies a *small set of extendable styles* for handling thumbnails, such as circle avatars.
 
 Single Responsibility Principle
 -------------------------------
