@@ -91,73 +91,61 @@ Here we have the `cell` module that handles the container for content. It makes 
 
 ### Encapsulation
 
-Secondly, our CSS modules should be encapsulated; meaning, they shouldn't directly affect one another, or, they don't need to know about one another. Think about encapsulation as an information-hiding mechanism. Let's look at an example.
+![Campus](define-campus-01.png)
+
+In our newest course interface at Code School, we have this bar at the bottom of the interface, which we call the `omnibar`.
+
+![Campus](define-campus-02.png)
+
+In the `omnibar`, there is a button on the far right.
+
+![Campus](define-campus-02.png)
+![Campus](define-campus-03.png)
+![Campus](define-campus-04.png)
+
+The markup for the button looks like this:
 
 ```html
-<header class="header">
-  <nav class="nav">
-    <!--- ... --->
-  </nav>
-</header>
+<div class="omnibar">
+  <!-- ... -->
+  <a href="#" class="btn">Check My Work</a>
+</div>
 ```
 
-Let's say that we have a navigation (`nav`) in a `header`, and we want to float the `nav` to the right.
+We want this button to be positioned absolutely to the bottom right. So how could we go about this?
 
 ```css
-.nav {
-  float: right;
+..btn {
+  /* ... */
 }
 ```
 
-What if we don't want every `.nav` to be floated to the right? What if we have a sub-navigation that is going to be on the left side?
+We could just target the `.btn` and position it. Obviously, though, we don't want *every* button to be absolutely positioned. Okay, let's scope it:
 
 ```css
-.header .nav {
-  float: right;
+.omnibar .btn {
+  /* ... */
 }
 ```
 
-This works, but the problem here is that our `.header` module is telling our `.nav` module what to do. It's not adhering to the idea of encapsulation. Instead, we can let the `header` handle how its elements are positioned:
-
-```css
-.header-nav {
-  float: right;
-}
-```
-
-Now, in our markup:
+We could just target the `.btn` within the `.omnibar`, but we're breaking the idea of encapsulation by having our two modules know about, and talk to one another. Let's change this:
 
 ```html
-<header class="header">
-  <nav class="header-nav nav">
-    <!--- ... --->
-  </nav>
-</header>
+<div class="omnibar">
+  <!-- ... -->
+  <a href="#" class="omnibar-btn btn">Check My Work</a>
+</div>
 ```
 
-Our `nav` module now remains encapsulated, and the `header` handles how its elements are positioned without talking to another module.
-
-We can make this better by abstracting out a `float` utility class.
+We add a new submodule class to the button, and now we can target that class:
 
 ```css
-.fr {
-  float: right;
+.omnibar-btn {
+  /* ... */
 }
 ```
 
-Yes, this is scary, but small, extendable utility classes like this one can save you lines and lines of CSS for all of those one-off contextual style tweaks **that always occur**.
-
-```html
-<header class="header">
-  <nav class="nav fr">
-    <!--- ... --->
-  </nav>
-</header>
-```
-
-Now we've abstracted out the positioning of the `.nav`, so as to keep things encapsulated. 
-
-*Ultimately, you should have a `grid` module that handles the layout, but this illustrates the idea of encapsulation, and how you want to limit the responsibility and scope of your modules.*
+Now, as we want, the `.omnibar` module only knows about itself, and it handles how its elements are positioned. The button adds the styling, but doesn't need to know about how it's being positioned within the omnibar.
 
 **Positioning and layout are constant struggles with modular CSS. You'll have to abstract a lot of the layout styling to a more global component to keep your modules properly encapsulated.**
 
@@ -285,6 +273,7 @@ That's a brief look at the naming conventions and structure that our team uses, 
 - BEM
 - Suit
 - SMACSS
+- inuit.css
 
 Make sure you look at all these methodologies, as one might fit your way of working the best. They are also great starting points to building your own system.
 
