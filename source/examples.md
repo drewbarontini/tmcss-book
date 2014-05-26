@@ -92,6 +92,45 @@ Next, we tackle the common patterns that we're used to seeing.
 - Card
 - Bucket
 
+##### List
+
+We can see that there are a lot of lists throughout the site.
+
+![Dribbble](example-dribbble-list-01.png)
+![Dribbble](example-dribbble-list-02.png)
+
+We have a few different types of lists:
+
+- Inline
+- Block
+- Object (floated)
+
+##### Thumb
+
+We'll want a `thumb` module to handle our user thumbnails and create the circle avatars.
+
+![Dribbble](example-dribbble-thumb.png)
+
+##### Icon
+
+We'll need an `icon` module to handle all the site-wide icons.
+
+![Dribbble](example-dribbble-icon-01.png)
+![Dribbble](example-dribbble-icon-02.png)
+
+##### Form
+
+![Dribbble](example-dribbble-form.png)
+
+##### Card
+
+![Dribbble](example-dribbble-card.png)
+
+##### Bucket
+
+![Dribbble](example-dribbble-bucket-01.png)
+![Dribbble](example-dribbble-bucket-02.png)
+
 #### Unique Patterns
 
 I'm not seeing any unique patterns, but that might change as you build out the site.
