@@ -246,7 +246,7 @@ So, for example, we have this `.dropdown` that is hidden by default, and is show
 
 ### Context
 
-This is a very important concept that applies to the Single Responsibility Principle’s "encapsulation" idea. Let's say that we have a `.dropdown` module, and when that `.dropdown` is inside of a parent container, it needs to have `position: relative` on that parent container to set the positioning context. Rather than adding `position: relative` to that parent container, thus breaking the "Single Responsibility Principle," because our modules are no longer encapsulated (they are directly affecting one another), we can use a "context" class to handle this for us:
+Let's say that we have a `.dropdown` module, and when that `.dropdown` is inside of a parent container, it needs to have `position: relative` on that parent container to set the positioning context. Rather than adding `position: relative` to that parent container, we can use a "context" class to handle this for us:
 
 ```css
 .has-dropdown {
