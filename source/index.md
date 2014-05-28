@@ -55,7 +55,8 @@ Outline
     - Limit nesting
     - Avoid "magic numbers"
     - Abstract layout and positioning
-- Exploring the "why"
+    - Evolution of Modular CSS
+- Process
     - 1. Identify
         - Structure, layout (highest level)
         - Common patterns (known)
