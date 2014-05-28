@@ -99,7 +99,6 @@ In our newest course interface at Code School, we have this bar at the bottom of
 
 In the `omnibar`, there is a button on the far right.
 
-![Campus](define-campus-02.png)
 ![Campus](define-campus-03.png)
 ![Campus](define-campus-04.png)
 
@@ -180,7 +179,7 @@ It's very true. We constantly evaluate and evolve the system as we work on new p
 
 At Code School (and Envy Labs), we use MVCSS, which is a Sass-based CSS architecture that I created with Nick. To give you a sample of some naming conventions, I'll talk about how we do things.
 
-*This is by no way preaching our method. This is merely an example that can help guide you to establishing your own naming conventions.*
+*This is by no means preaching our method. This is merely an example that can help guide you to establishing your own naming conventions.*
 
 ### camelCase & Hyphens
 
