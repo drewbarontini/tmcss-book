@@ -57,11 +57,11 @@ On [Meagan Fisher's site](http://owltastic.com/), she has her content contained 
 
 #### Well
 
-The `well` handles the vertical spacing on the top and bottom, and it generally resides within a `cell`.  
+The `well` handles the vertical spacing on the top and bottom, and it generally resides within a `row`.  
 
 ![Owltastic](process-owltastic-03.png)
 
-Again, on **Meagan Fisher's** site, you can see that there is some set spacing at the top and bottom of each `row`, and within each `cell` that is handling the width limiting.
+Again, on **Meagan Fisher's** site, you can see that there is some set spacing at the top and bottom of each `row`, and alongside each `cell` that is handling the width limiting.
 
 We used to build this into the `cell`, but we realized that it wasn't properly adhering to the **Single Responsibility Principle**, so we made the new `well` module to handle *only* vertical spacing.
 
@@ -108,7 +108,7 @@ Next, look for the common patterns that you continually encounter and build for 
 
 #### Card
 
-Cards are stylistic containers for content, that general have some `background-color`, a `border-radius`, a `box-shadow` or `border`, and some `padding`. Here, this is what I'd call a `card` on [Dribbble](http://dribbble.com):
+Cards are stylistic containers for content that generally have some `background-color`, a `border-radius`, a `box-shadow` or `border`, and some `padding`. Here, this is what I'd call a `card` on [Dribbble](http://dribbble.com):
 
 ![Dribbble Card](process-dribbble-05.png)
 ![Dribbble Card](process-dribbble-06.png)
@@ -271,4 +271,4 @@ If you find yourself unsetting a lot of styles, you might want to consider a ref
 
 ### Style Repetition
 
-Use tools like [csscss](https://github.com/zmoazeni/csscss), [csslint](https://github.com/CSSLint/csslint), and [Style Stats](https://github.com/t32k/stylestats) to help you spot repetition of your code.
+Use tools like [csscss](https://github.com/zmoazeni/csscss), [csslint](https://github.com/CSSLint/csslint), and [Style Stats](https://github.com/t32k/stylestats) to help you spot repetition of your code. Use things like `@extend` in Sass, or abstract out shared styles to another module.
