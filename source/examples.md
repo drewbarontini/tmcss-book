@@ -19,12 +19,10 @@ Dribbble
 4. Combine
 5. Refine
 
-### Identify
-
 ![Dribbble](example-dribbble.png)
 ![Dribbble](example-dribbble-bottom.png)
 
-#### Structure & Layout
+### Structure & Layout
 
 First, we start by identifying the most reusable modules, the ones used for structure and layout.
 
@@ -33,7 +31,7 @@ First, we start by identifying the most reusable modules, the ones used for stru
 - Well
 - Grid
 
-##### Row
+#### Row
 
 The `row` module handles width-spanning blocks.
 
@@ -44,7 +42,7 @@ The `row` module handles width-spanning blocks.
 ![Dribbble](example-dribbble-row-02.png)
 ![Dribbble](example-dribbble-row-03.png)
 
-##### Cell
+#### Cell
 
 The `cell` module handles width-limiting.
 
@@ -54,7 +52,7 @@ The `cell` module handles width-limiting.
 ![Dribbble](example-dribbble-cell-01.png)
 ![Dribbble](example-dribbble-cell-02.png)
 
-##### Well
+#### Well
 
 The `well` module handles vertical spacing.
 
@@ -62,7 +60,7 @@ The `well` module handles vertical spacing.
 
 ![Dribbble](example-dribbble-well.png)
 
-##### Grid
+#### Grid
 
 The `grid` module handles grid-based element arrangement.
 
@@ -81,7 +79,7 @@ The `grid` module handles grid-based element arrangement.
 
 With these modules in place, we have a simple structure that we can use to set up the layout of the site.
 
-#### Common Patterns
+### Common Patterns
 
 Next, we tackle the common patterns that we're used to seeing.
 
@@ -92,7 +90,7 @@ Next, we tackle the common patterns that we're used to seeing.
 - Card
 - Bucket
 
-##### List
+#### List
 
 We can see that there are a lot of lists throughout the site.
 
@@ -111,35 +109,52 @@ We'll want a `thumb` module to handle our user thumbnails and create the circle 
 
 ![Dribbble](example-dribbble-thumb.png)
 
-##### Icon
+#### Icon
 
 We'll need an `icon` module to handle all the site-wide icons.
 
 ![Dribbble](example-dribbble-icon-01.png)
 ![Dribbble](example-dribbble-icon-02.png)
 
-##### Form
+#### Form
 
 ![Dribbble](example-dribbble-form.png)
 
-##### Card
+#### Card
 
 ![Dribbble](example-dribbble-card.png)
 
-##### Bucket
+#### Bucket
 
 ![Dribbble](example-dribbble-bucket-01.png)
 ![Dribbble](example-dribbble-bucket-02.png)
 
-#### Unique Patterns
+### Unique Patterns
 
 I'm not seeing any unique patterns, but that might change as you build out the site.
 
+### Audit
+
+Based on our assessment, we'll have these modules to build the primary page of our site, and set the foundation for building out more pages.
+
+- Row
+- Cell
+- Well
+- Grid
+- List
+- Thumb
+- Icon
+- Form
+- Card
+- Bucket
+
+Since it would take me all day to run through how to write all of these elements, I'm going to spare you the pain of listening to me that long and provide a link to the code up on GitHub.
+
 **Link to code**
 
-Instagram
----------
-[http://instagram.com/](http://instagram.com/)
+Digg
+----
+[http://digg.com/](http://digg.com/)
 
 1. Identify
 2. Define
@@ -147,13 +162,7 @@ Instagram
 4. Combine
 5. Refine
 
-GitHub
-------
-[http://github.com/](http://github.com/)
-
-1. Identify
-2. Define
-3. Build
-4. Combine
-5. Refine
+![Digg](example-digg-01.png)
+![Digg](example-digg-02.png)
+![Digg](example-digg-03.png)
 

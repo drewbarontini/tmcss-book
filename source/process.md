@@ -93,7 +93,11 @@ And on the GitHub user profile page, they have several nested grids.
 ![GitHub Guides](process-github-03.png)
 ![GitHub Guides](process-github-04.png)
 
-#### Buckets
+### Common patterns (known)
+
+Next, look for the common patterns that you continually encounter and build for each project.
+
+#### Bucket
 
 The media object is the cornerstone example of OOCSS, and it's another very common layout pattern that you can use on most projects. If you aren't familiar with the pattern, it's a media element with content next to it. For example:
 
@@ -101,10 +105,6 @@ The media object is the cornerstone example of OOCSS, and it's another very comm
 ![Dribbble Comment](process-dribbble-02.png)
 ![Dribbble Comment](process-dribbble-03.png)
 ![Dribbble Comment](process-dribbble-04.png)
-
-### Common patterns (known)
-
-Next, look for the common patterns that you continually encounter and build for each project.
 
 #### Card
 

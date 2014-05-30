@@ -7,23 +7,23 @@ priority: 2
 Intro
 =====
 
-The name of this talk is "Thinking Modular CSS." Before we get our hands dirty, I'd like to take a moment and talk about Dan Denney.
+The name of this talk is "Thinking Modular CSS." Before we get started, I'd like to take a moment and talk about Dan Denney.
 
 Musings about Dan Denney
 ------------------------
 
 I'm fortunate enough that I get to work with Dan Denney. He is one of my favorite people on this planet.
 
-The story I like to always tell that illustrates this is his encounter with HTML emails. I'm sure all of us here know how painful they are. You have to code in `table`s like the late 90s, use inline styles, and it's just generally not fun. All of our front-end developers just get in, do them, and get out. However, not for Dan Denney. Instead of pushing through and moving on, what did he do? He made our HTML emails awesome, pushed the technology, and now wears the crown of "HTML Email King."
+The story I like to always tell that illustrates this is his encounter with HTML emails. I'm sure all of us here know how painful they are. You have to code in `table`s, use inline styles, and it's just generally not fun. All of our front-end developers just get in, do them, and get out. However, not for Dan Denney. Instead of pushing through and moving on, what did he do? He made our HTML emails awesome, pushed the technology, and now wears the crown of "HTML Email King."
 
-He's a saint, and everyone needs to know that.
+He's truly a saint, and everyone needs to know that.
 
 `#saintdenney`
 
 I love this conference
 ----------------------
 
-In all seriousness, I love this conference. I've only missed it once, and I look forward to it every year. The Denney family does a tremendous job, and I'm super pumped to be here, and to be speaking to all of you.
+In all seriousness, though, I love this conference. I've only missed it once, and I look forward to it every year. The Denney family does a tremendous job, and I'm super pumped to be here, and to be speaking to all of you.
 
 And as proof that I've been here before, here is a picture of me from last year. Funny story: in our company chatroom, if you use the word "unimpressed", this picture shows up because, apparently, I look unimpressed. However, I think I was more just in awe while looking at all the bacon.
 
@@ -34,7 +34,7 @@ So what am I hear to talk about? This talk is called, "Thinking Modular CSS". Wh
 
 > Learn the "why" of modular CSS by analyzing the decisions that craft a flexible architecture.
 
-I *really* want to explore the thought process behind building modular CSS systems. We've talked a lot about the "how" of things like object-oriented CSS (and other CSS methodologies), but we haven't really talked about the process that we take to get there.
+I *really* want to explore the thought process behind building writing modular CSS. We've talked a lot about the "how" of things like object-oriented CSS (and other CSS methodologies), but we haven't really talked about the process that we take to get there.
 
 It's something that we see with new front-end developers that we teach our system to. They understand how we structure things, what we call certain elements, how we organize our CSS, but how we get there, the thought process, is the tough part to teach.
 
@@ -109,27 +109,21 @@ Ultimately, the balance and blend of design and programming landed me right wher
 Front-end is a specialization
 -----------------------------
 
-"Front-end Development" truly is a specialization; it's a craft, and it's not easy to do. It's not just for designers who code or developers who write HTML & CSS. It's an area of focus for unique individuals with particular skill sets. I'm proud to call myself a "front-end developer."
-
-### "Front-end Developer & Designer"
-
-For a long time, though, I called myself a "front-end developer *and designer*." The "and designer" bit slowly faded away because of how happy I am to call myself a "front-end developer." It's a specialization that is respected and (mostly) understood by the industry.
+"Front-end Development" truly is a specialization; it's a craft, and it's not easy to do. It's not just for designers who code or developers who write HTML & CSS. It's an area of focus for unique individuals with particular skill sets.
 
 ### Developers respect us (mostly)
 
-Developers used to trample over the HTML and CSS, largely qualifying their actions as "HTML and CSS are so easy, any of us can write it." Although HTML and CSS are easy to write, they aren't easy to write well. Writing quality, semantic markup and modular CSS is a craft. Preprocessors like Sass and LESS now add a more programmatic layer of abstraction to our CSS, which is more easily understood by developers.
+Developers used to trample over the HTML and CSS, largely qualifying their actions as "HTML and CSS are so easy, any of us can write it." Although HTML and CSS are easy to write, they aren't easy to write well. 
 
-Now that the "front-end development" field has a more solid footing, developers understand the complexity behind the simple HTML and CSS languages that we write.
-
-### Easy to write, hard to write well
-
-Like I said, HTML & CSS are easy to learn and write, but they are difficult to write *well*.
-
-#### We're building complex systems now
+### We're building complex systems now
 
 Our styles are built out on large-scale applications that need to be performant and easily understood by a large team.
 
-#### Ability for styles to flex and work in different situations, environments
+### Programmatic layer of abstraction
+
+We're (generally) working with preprocessors like Sass and LESS,which add a more programmatic layer of abstraction to our CSS, which is allows us to use more advanced methods for creating module CSS.
+
+### Ability for styles to flex and work in different situations, environments
 
 Our styles need to be flexible so that we can add new features and pages, as well as have a solid foundation for each new site or application that we build.
 

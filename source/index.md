@@ -36,11 +36,10 @@ Outline
         - Computer Science
         - Front-end
     - Front-end is now a specialization
-        - "Front-end Developer & Designer"
         - Developers respect us (mostly)
-        - Easy to write, hard to write well
-            - We're building complex systems now
-            - Ability for styles to flex and work in different situations, environments
+        - We're building complex systems now
+        - Programmatic layer of abstraction
+        - Ability for styles to flex and work in different situations, environments
 - Define "Modular CSS"
     - Single Responsibility Principle
       - Single Responsibility
@@ -70,5 +69,3 @@ Outline
     - 5. Refine
 - Examples
     - Dribbble
-    - Instagram
-    - GitHub
