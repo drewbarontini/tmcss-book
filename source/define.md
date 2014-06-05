@@ -301,11 +301,7 @@ section.content {
 }
 ```
 
-Now, we don't nest much, and when we do, it's not many levels deep.
-
-- Example of proper Sass
-
-We generally only nest things like `:hover`, `:focus`, `::before`, `::after`, `:last-child`, etc.
+Now, we don't nest much, and when we do, it's not many levels deep. We generally only nest things like `:hover`, `:focus`, `::before`, `::after`, `:last-child`, etc.
 
 ```sass
 .btn
@@ -317,6 +313,31 @@ We generally only nest things like `:hover`, `:focus`, `::before`, `::after`, `:
   &:hover,
   &:focus
     background: green
+```
+
+```sass
+.element
+  // ...
+  &::before
+    // ....
+  &::after
+    // ....
+```
+
+```sass
+.element
+  // ...
+  &:last-child
+    // ....
+```
+
+And, when you have them, modifiers that alter submodules. For example:
+
+```sass
+.list--inline
+
+  .list-item
+    display: inline
 ```
 
 Avoid "magic numbers"
