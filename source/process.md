@@ -24,6 +24,8 @@ Obviously the first step is to identify the patterns that you'll start with when
 
 I like to start at the highest level: the structure and layout elements. These tend to be the most reusable elements project to project.
 
+*Let's take a look at some example patterns to get an idea of the process we take.*
+
 #### Rows
 
 Freqently on the web, you'll see these full-width bars, generally with a `background-color` or `image`.
@@ -74,7 +76,7 @@ We used to build this into the `cell`, but we realized that it wasn't properly a
 The `cell` and `well` are used in conjunction with one another, and you can specify modifiers to your `well` that will handle various vertical margins.
 
 ```html
-<div class="cell well--l">
+<div class="cell well well--l">
   <!-- ... -->
 </div>
 ```
