@@ -70,3 +70,9 @@ Outline
 - Examples
     - Dribbble
     - Digg
+- Outro
+  - What we learned
+  - Why it's important
+  - Don't drive yourself crazy
+  - "Always Be Evaluating"
+  - Continue learning resources
