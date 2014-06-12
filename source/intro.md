@@ -34,7 +34,7 @@ So what am I hear to talk about? This talk is called, "Thinking Modular CSS". Wh
 
 > Learn the "why" of modular CSS by analyzing the decisions that craft a flexible architecture.
 
-I *really* want to explore the thought process behind building writing modular CSS. We've talked a lot about the "how" of things like object-oriented CSS (and other CSS methodologies), but we haven't really talked about the process that we take to get there.
+I *really* want to explore the thought process behind writing modular CSS. We've talked a lot about the "how" of things like object-oriented CSS (and other CSS methodologies), but we haven't really talked about the process that we take to get there.
 
 It's something that we see with new front-end developers that we teach our system to. They understand how we structure things, what we call certain elements, how we organize our CSS, but how we get there, the thought process, is the tough part to teach.
 
