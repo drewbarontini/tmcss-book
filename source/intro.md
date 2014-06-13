@@ -60,7 +60,7 @@ I'm a front-end developer at Code School. We have our offices right over in Orla
 What is Code School?
 --------------------
 
-If you're not familiar with Code School, it is an online platform for teaching web technologies. We have interactive courses teaching technologies like Ruby on Rails, Sass, Git, Angular, iOS, and a lot of other languages and frameworks.
+If you're not familiar with Code School, it is an online platform for learning web technologies. We have interactive courses teaching technologies like Ruby on Rails, Sass, Git, Angular, iOS, and a lot of other languages and frameworks.
 
 What am I responsible for?
 --------------------------
