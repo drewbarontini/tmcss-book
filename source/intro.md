@@ -77,41 +77,12 @@ I'm also responsible for our course engine, which is a separate entity from the 
 
 In addition to that, I also oversee the buildout of individual courses, as well as keeping courses up-to-date.
 
-The journey
------------
-
-What has been my journey into front-end development? This is a question that we ask all new hires because it's really interesting to see the various paths people have taken to the field, particularly into "front-end development."
-
-### Band
-
-For me, it all started when I was in a band back in High School and into College. Music is a creative field, obviously, but it was actually the abundance of design and web needs for the band that got me started.
-
-### MySpace
-
-MySpace was a really big thing for bands back in the day (not sure what it is now?), and we didn't have the money to pay a web designer to create a custom MySpace page, so I took a stab at it. Little did I know, I'd really find a passion in the horrid CSS I wrote for custom MySpace pages.
-
-Side note: if anyone in here ever did custom MySpace pages, let's get together at some point and share a good cry. You will understand.
-
-### T-shirts
-
-Eventually, that evolved into more traditional illustration and graphic design, primarily for custom t-shirt and apparel designs. This was a really big component in the music world; custom t-shirt designs. There was a great community of designers that I learned a lot from.
-
-However, I continued honing my HTML, CSS, and JavaScript skills in college, and ultimately became interested in more advanced, traditional programming.
-
-### Computer science
-
-I took some computer science classes in college, and I became fascinated with programming.
-
-### Front-end
-
-Ultimately, the balance and blend of design and programming landed me right where I'm happy to be now, front-end development.
-
 Front-end is a specialization
 -----------------------------
 
 "Front-end Development" truly is a specialization; it's a craft, and it's not easy to do. It's not just for designers who code or developers who write HTML & CSS. It's an area of focus for unique individuals with particular skill sets.
 
-### Developers respect us (mostly)
+### HTML/CSS are easy to write, hard to write well
 
 Developers used to trample over the HTML and CSS, largely qualifying their actions as "HTML and CSS are so easy, any of us can write it." Although HTML and CSS are easy to write, they aren't easy to write well. 
 

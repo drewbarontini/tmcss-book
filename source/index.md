@@ -26,21 +26,15 @@ Outline
     - What do I do?
     - What is Code School?
     - What am I responsible for?
-        - I maintain and lead the front-end for the .com
+        - The front-end for the .com
         - Our course engine
         - Buildout of individual courses
-    - The journey
-        - Band
-        - Myspace
-        - T-shirts
-        - Computer Science
-        - Front-end
     - Front-end is now a specialization
-        - Developers respect us (mostly)
+        - HTML/CSS easy to write, hard to write well
         - We're building complex systems now
-        - Programmatic layer of abstraction
         - Ability for styles to flex and work in different situations, environments
 - Define "Modular CSS"
+    - "Modular Design"
     - Single Responsibility Principle
       - Single Responsibility
       - Encapsulation
@@ -51,15 +45,15 @@ Outline
         - States
         - Context
         - Submodules
-    - Limit nesting
-    - Avoid "magic numbers"
-    - Abstract layout and positioning
+    - Limit Nesting
+    - Avoid "Magic Numbers"
+    - Abstract Structure
     - Evolution of Modular CSS
 - Process
     - 1. Identify
-        - Structure, layout (highest level)
-        - Common patterns (known)
-        - Unique patterns (unknown)
+        - Structure/Layout
+        - Common Patterns
+        - Unique Patterns
         - Front-end Audit
     - 2. Define
         - Responsibility
