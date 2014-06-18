@@ -92,7 +92,7 @@ Our styles are built out on large-scale applications that need to be performant 
 
 ### Programmatic layer of abstraction
 
-We're (generally) working with preprocessors like Sass and LESS,which add a more programmatic layer of abstraction to our CSS, which is allows us to use more advanced methods for creating module CSS.
+We're (generally) working with preprocessors like Sass and LESS,which add a more programmatic layer of abstraction to our CSS, which is allows us to use more advanced methods for creating modular CSS.
 
 ### Ability for styles to flex and work in different situations, environments
 
