@@ -266,6 +266,14 @@ We define a context class using `.has-` as the prefix. Then, in our markup:
 
 The `.container` doesn't need to know what's in it by altering its styles to accommodate the `.dropdown`. Instead, the `.dropdown` says, "Hey! I'm here, deal with it."
 
+### Submodules
+
+Submodules are for elements that are scoped to a parent module. For example, earlier we had `.omnibar-btn`, which was a submodule class. We use a single hyphen (`-`) to denote a submodule.
+
+```css
+.module-submodule { }
+```
+
 That's a brief look at the naming conventions and structure that our team uses, and hopefully it's a useful example that you can work off of. We borrowed a lot of ideas from great methodologies created by insanely smart people. Things like:
 
 - OOCSS
