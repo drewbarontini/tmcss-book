@@ -343,7 +343,7 @@ We've seen a gradual shift in the way that we think about modular CSS, and how o
 
 ![Screenshot](define-dribbble-shot.png)
 
-Ah, the Dribbble shot. We're all (most likely) very familiar with it. How would we have marked this up *initially* with the advent of "modular" CSS?
+Ah, the Dribbble shot. We're all (most likely) very familiar with it. How would we have structured our CSS *initially* with the advent of "modular" CSS?
 
 ```html
 <div class="shot">
@@ -412,27 +412,6 @@ Ok ok, we'll scope everything to the `.shot`!
 
 Alright. We've fixed the problem with that `h2` changing to an `h3`. Now we just have to target the `shot-user` class, and it will apply the correct styles to any HTML element used there. Good? Not really. What if we use this same pattern for another element that *isn't* a "shot"? The name `shot` doesn't really make sense for that element, so we need to make it something more abstract. Alright, let's evolve this.
 
-```html
-<div class="card">
-  <div class="card-preview">
-    <a href="#">
-      <img class="card-img" src="image.jpg" alt="" />
-    </a>
-    <ul class="card-list">
-      <li>3</li>
-      <li><a href="#">1</a></li>
-      <li><a href="#">2</a></li>
-    </ul>
-  </div>
-  <h2 class="card-user">
-    <a href="#">
-      <img src="user.jpg" alt="User Name" />
-      User Name
-    </a>
-  </h2>
-</div>
-```
-
 ```css
 .card         { }
 .card-preview { }
@@ -444,27 +423,6 @@ Alright. We've fixed the problem with that `h2` changing to an `h3`. Now we just
 
 Okay, we call it a `card`; that's *way* more abstract, so we're good, right? Well not quite. We realize now that our `card-list` styles are being duplicated on different lists throughout the site. We need to pull that out. I think you see where this is headed.
 
-```html
-<div class="card">
-  <div class="card-preview">
-    <a href="#">
-      <img class="card-img" src="image.jpg" alt="" />
-    </a>
-    <ul class="list">
-      <li>3</li>
-      <li><a href="#">1</a></li>
-      <li><a href="#">2</a></li>
-    </ul>
-  </div>
-  <h2 class="card-user">
-    <a href="#">
-      <img src="user.jpg" alt="User Name" />
-      User Name
-    </a>
-  </h2>
-</div>
-```
-
 ```css
 .card { }
 /* ... */
@@ -474,25 +432,11 @@ Okay, we call it a `card`; that's *way* more abstract, so we're good, right? Wel
 
 The same thing starts happening for the various `shot` submodules, and now we see the problem. We can see that the `shot` isn't really a `shot`, it's a collection of various style patterns that **should be written as highly reusable patterns**.
 
-```html
-<div class="card">
-  <a href="#">
-    <img class="thumb thumb--m" src="image.jpg" alt="" />
-  </a>
-  <ul class="list">
-    <li class="list-item">3</li>
-    <li class="list-item"><a href="#">1</a></li>
-    <li class="list-item"><a href="#">2</a></li>
-  </ul>
-</div>
-<div class="bucket bucket--flag">
-  <div class="bucket-media">
-    <img class="thumb" src="user.jpg" alt="User Name" />
-  </div>
-  <div class="bucket-content">
-    <h2><a href="#">User Name</a></h2>
-  </div>
-</div>
+```css
+.bucket { }
+.card   { }
+.list   { }
+.thumb  { }
 ```
 
 Now we can see how modular CSS has evolved through phases that have brought us to this point. We're not looking at "things" that may seem to have a clear name and markup, but really a collection of independently created modules that you can mix and match to create multiple style patterns. But how do we find these patterns? **We need to establish a process**.
