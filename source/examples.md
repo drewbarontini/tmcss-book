@@ -41,6 +41,7 @@ The `row` module handles width-spanning blocks.
 ![Dribbble](example-dribbble-row-01.png)
 ![Dribbble](example-dribbble-row-02.png)
 ![Dribbble](example-dribbble-row-03.png)
+![Dribbble](example-dribbble-row-04.png)
 
 #### Cell
 
@@ -58,7 +59,8 @@ The `well` module handles vertical spacing.
 
 - Top/bottom margin
 
-![Dribbble](example-dribbble-well.png)
+![Dribbble](example-dribbble-well-01.png)
+![Dribbble](example-dribbble-well-02.png)
 
 #### Grid
 
