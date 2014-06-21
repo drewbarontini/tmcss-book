@@ -15,11 +15,18 @@
 
 .sidebar
   @extend .boxSizing
-  +transition-transform(0.3s ease-in-out)
-  +transform(translateX(-100%))
-  background: darken($c-background, 10%)
+  @if $sidebar-collapsible
+    +transform(translateX(-100%))
+    +transition-transform(0.3s ease-in-out)
+  @else
+    +transform(translateX(-100%))
+    +transition-transform(0.3s ease-in-out)
+    +respond-to($breakpoint-tablet)
+      +transform(translateX(0))
+  background: $sidebar-background
   bottom: 0
   left: 0
+  overflow: scroll
   position: fixed
   top: 0
   width: $sidebar-width
@@ -29,8 +36,12 @@
 //   States
 // -------------------------------------
 
-.sidebar.is-open
-  +transform(translateX(0))
+@if $sidebar-collapsible
+  .sidebar.is-open
+    +transform(translateX(0))
+@else
+  .sidebar.is-open
+    +transform(translateX(0))
 
 // -------------------------------------
 //   Scaffolding
@@ -40,19 +51,35 @@
 
 .sidebar-link
   border: 0
-  color: $c-secondary
+  color: $sidebar-link-color
   display: block
   font-family: $f-header
-  font-size: 80%
+  font-size: $sidebar-link-fontSize
   padding: $b-whitespace-s $b-whitespace
   &:hover,
   &:focus
-    background: darken($c-background, 20%)
-    color: $c-base
+    background: $sidebar-link-hover-background
+    color: $sidebar-link-hover-color
+
+// Sub
+
+.sidebar-link--sub
+  padding-left: $b-whitespace-l
 
 // Active
 
 .sidebar-link.is-active
-  background: $c-highlight
-  color: $c-invert
+  background: $sidebar-link-active-background
+  color: $sidebar-link-active-color
+
+// ----- Navigation ----- //
+
+// Sub
+
+.sidebar-nav-sub
+  background: $sidebar-nav-sub-background
+  display: none
+
+.sidebar-nav-sub.is-active
+  display: block
 

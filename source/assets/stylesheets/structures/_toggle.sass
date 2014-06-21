@@ -13,14 +13,20 @@
 
 .toggle
   border: 0
-  display: block
+  @if $sidebar-collapsible
+    display: block
+  @else
+    +respond-to($breakpoint-tablet)
+      display: none
   height: 5 * $toggle-height
   left: $b-whitespace
-  position: fixed
+  position: absolute
   top: $b-whitespace
   -webkit-backface-visibility: hidden
   width: $toggle-width
   z-index: 20
+  +respond-to($breakpoint-tablet)
+    position: fixed
 
 // -------------------------------------
 //   States
