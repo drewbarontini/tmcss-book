@@ -47,8 +47,8 @@ Outline
             - States
             - Context
             - Submodules
-        - Avoid "Magic Numbers"
         - Abstract Structure
+        - Avoid "Magic Numbers"
     - Evolution of Modular CSS
 - Process
     - 1. Identify

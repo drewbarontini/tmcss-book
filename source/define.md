@@ -284,29 +284,6 @@ That's a brief look at the naming conventions and structure that our team uses, 
 
 Make sure you look at all these methodologies, as one might fit your way of working the best. They are also great starting points to building your own system.
 
-Avoid "magic numbers"
----------------------
-
-What am I talking about when I say "magic numbers"?
-
-```css
-.element {
-  position: relative;
-  top: -2px;
-}
-```
-
-You know what this is. We all do it. These "magic numbers" are best to avoid whenever possible. You want your styles to be predictable and flexible, and these "magic numbers" break that. However, when you do use them, which is sometimes unavoidable, make sure to document it.
-
-```css
-.element {
-  position: relative;
-  top: -2px; /* FIXME: Magic number! */
-}
-```
-
-Now I have a way to search across the project and find the magic numbers whenever I do a refactor.
-
 Abstract layout and positioning
 -------------------------------
 
@@ -335,6 +312,29 @@ This is all well and good until we have a second `.nav` block that needs to be p
 ```
 
 This is an example of the grid we use, but the concept of a grid handling the structure is what's important here. The individual module doesn't need to control its layout; it should flex and fit in any container.
+
+Avoid "magic numbers"
+---------------------
+
+What am I talking about when I say "magic numbers"?
+
+```css
+.element {
+  position: relative;
+  top: -2px;
+}
+```
+
+You know what this is. We all do it. These "magic numbers" are best to avoid whenever possible. You want your styles to be predictable and flexible, and these "magic numbers" break that. However, when you do use them, which is sometimes unavoidable, make sure to document it.
+
+```css
+.element {
+  position: relative;
+  top: -2px; /* FIXME: Magic number! */
+}
+```
+
+Now I have a way to search across the project and find the magic numbers whenever I do a refactor.
 
 Evolution of Modular CSS
 ------------------------
