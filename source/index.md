@@ -34,20 +34,21 @@ Outline
         - We're building complex systems now
         - Ability for styles to flex and work in different situations, environments
 - Define "Modular CSS"
-    - "Modular Design"
-    - Single Responsibility Principle
-      - Single Responsibility
-      - Encapsulation
-    - Classes
-    - Establish naming conventions
-        - camelCase & Hyphens
-        - Modifiers
-        - States
-        - Context
-        - Submodules
-    - Limit Nesting
-    - Avoid "Magic Numbers"
-    - Abstract Structure
+    - Tenets 
+        - "Modular Design"
+        - Single Responsibility Principle
+            - Single Responsibility
+            - Encapsulation
+    - Practical Applications 
+        - Classes
+        - Establish naming conventions
+            - camelCase & Hyphens
+            - Modifiers
+            - States
+            - Context
+            - Submodules
+        - Avoid "Magic Numbers"
+        - Abstract Structure
     - Evolution of Modular CSS
 - Process
     - 1. Identify
