@@ -114,7 +114,7 @@ The markup for the button looks like this:
 We want this button to be positioned absolutely to the bottom right. So how could we go about this?
 
 ```css
-..btn {
+.btn {
   /* ... */
 }
 ```
