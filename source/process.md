@@ -126,7 +126,10 @@ Lists are *everywhere* on the web, and it's a very common pattern that you'll ha
 
 Finally, find the more unique patterns. Do you notice very specific style patterns?
 
-**Example**
+![Dribbble](process-dribbble-07.png)
+![Dribbble](process-dribbble-08.png)
+
+Again, on Dribbble, a good example of a "unique pattern" would be the color list for the colors contained within the shot. This is a type of list, but would have more unique styles that wouldn't be easily ported to another site. Although it can be written modularly, it's pretty specific to Dribbble.
 
 ### Front-end Audit
 
